@@ -5,10 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Features", href: "/features" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
+  { label: "Features", href: "/features" },
+  { label: "What's New", href: "/whats-new" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const PLAY_STORE_URL =
@@ -18,8 +19,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/20 px-5 py-1.5 backdrop-blur-xl">
-      <div className="relative mx-auto flex max-w-screen-xl items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white/10 px-5 py-1.5 backdrop-blur-xl">
+      <div className="relative mx-auto flex max-w-[1024px] items-center justify-between">
         {/* Logo (left) */}
         <Link
           href="/"
@@ -31,7 +32,7 @@ export default function Navbar() {
             alt="Look AI Logo"
             width={183}
             height={64}
-            className="h-11 w-auto sm:h-14"
+            className="h-11 w-auto sm:h-11"
             priority
           />
         </Link>

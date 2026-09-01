@@ -1,0 +1,14 @@
+/home/som2077/Desktop/website/AGENTS.md
+/home/som2077/Desktop/website/CLAUDE.md
+/home/som2077/Desktop/website/README.md
+/home/som2077/Desktop/website/web/index.html
+/home/som2077/Desktop/website/public/file.svg
+/home/som2077/Desktop/website/public/fotter_cross.svg
+/home/som2077/Desktop/website/public/getStartedLogo.svg
+/home/som2077/Desktop/website/public/globe.svg
+/home/som2077/Desktop/website/public/googleplay.png
+/home/som2077/Desktop/website/public/next.svg
+/home/som2077/Desktop/website/public/playStore.svg
+/home/som2077/Desktop/website/public/playstore.svg
+/home/som2077/Desktop/website/public/vercel.svg
+/home/som2077/Desktop/website/public/window.svg
