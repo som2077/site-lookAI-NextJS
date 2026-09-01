@@ -28,7 +28,12 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#f5f5f7] text-[#1d1d1f] overflow-hidden">
+    <footer
+      className="w-full text-[#1d1d1f] overflow-hidden"
+      style={{
+        background: "linear-gradient(to bottom, #f5f5f7 0%, #fffbfb 40%, #f8dfe4 75%, #cba8e5 100%)"
+      }}
+    >
 
 
       {/* Main links grid */}

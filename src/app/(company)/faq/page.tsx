@@ -1,1 +1,11 @@
-export default function Page() { return <div className="min-h-[60vh] flex items-center justify-center text-3xl font-bold pt-20">FAQ</div>; }
+"use client";
+
+import FAQ from "@/components/FAQ";
+
+export default function FAQPage() {
+  return (
+    <main className="min-h-screen bg-[#fcfcfc]">
+      <FAQ />
+    </main>
+  );
+}

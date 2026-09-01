@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
+import FAQ from "@/components/FAQ";
 
 const features = [
   {
@@ -250,65 +251,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tabs Section - Demo */}
-      <section className="border-y border-zinc-100 bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-4xl px-6 sm:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-              How it works
-            </h2>
-            <p className="mt-4 text-zinc-600">
-              Three simple steps to transform your style.
-            </p>
-          </div>
-          <Tabs defaultValue="step1" className="mx-auto max-w-2xl">
-            <TabsList className="mx-auto mb-8 rounded-full bg-zinc-100 p-1.5">
-              <TabsTrigger value="step1">Step 1</TabsTrigger>
-              <TabsTrigger value="step2">Step 2</TabsTrigger>
-              <TabsTrigger value="step3">Step 3</TabsTrigger>
-            </TabsList>
-            <TabsContent value="step1" className="mx-auto mb-8">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-black text-white font-bold text-lg">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-black">Tell us your style</h3>
-                  <p className="mt-2 text-zinc-600">
-                    Answer a few quick questions about your preferences, body type, and lifestyle. Our AI learns what makes you look and feel your best.
-                  </p>
-                </div>
-              </div>
-            </TabsContent>
-            <TabsContent value="step2" className="mx-auto mb-8">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-black text-white font-bold text-lg">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-black">Get AI recommendations</h3>
-                  <p className="mt-2 text-zinc-600">
-                    Receive personalized outfit suggestions, trend reports, and virtual try-on previews tailored just for you.
-                  </p>
-                </div>
-              </div>
-            </TabsContent>
-            <TabsContent value="step3" className="mx-auto">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-black text-white font-bold text-lg">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-black">Shop with confidence</h3>
-                  <p className="mt-2 text-zinc-600">
-                    Buy what you love with confidence. Track your style evolution and get smarter recommendations over time.
-                  </p>
-                </div>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQ compact />
     </main>
   );
 }
