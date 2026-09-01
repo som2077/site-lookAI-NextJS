@@ -76,42 +76,63 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-white">
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center gap-8 bg-white px-6 py-16 text-center sm:px-8 lg:py-24">
-        <Badge variant="secondary" className="absolute top-6 right-6">
-          Now in Beta
-        </Badge>
-        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-black">
-          <svg viewBox="0 0 24 24" className="h-8 w-8 fill-white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-        <h1 className="text-5xl font-extrabold tracking-tight text-black sm:text-6xl lg:text-7xl">
-          Your AI-Powered Styling Assistant
-        </h1>
-        <p className="max-w-2xl text-lg text-zinc-600 sm:text-xl">
-          Find your perfect look in seconds. Personalized recommendations, virtual try-on, and trend analysis — all powered by AI.
-        </p>
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
-          <Button size="lg" className="w-full sm:w-auto">
-            Get Started Free
-          </Button>
-          <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            Watch Demo
-          </Button>
-        </div>
-        <div className="flex flex-wrap items-center gap-6 text-sm text-zinc-500">
-          <span className="flex items-center gap-1">
-            <svg viewBox="0 0 24 24" className="h-4 w-4 text-green-500" fill="currentColor">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            Trusted by 10,000+ users
-          </span>
-          <span className="flex items-center gap-1">
-            <svg viewBox="0 0 24 24" className="h-4 w-4 text-green-500" fill="currentColor">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            4.9/5 rating
-          </span>
+      <section className="relative w-full bg-white px-6 py-16 sm:px-8 lg:py-24 overflow-hidden">
+        <div className="mx-auto max-w-[1200px] grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+          {/* Left Column - Content */}
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 lg:pr-8">
+
+            {/* Rating Badge */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 shadow-sm">
+              <div className="flex -space-x-2">
+                <div className="h-6 w-6 rounded-full bg-gray-200 border-2 border-white overflow-hidden">
+                  <img src="https://i.pravatar.cc/100?img=1" alt="User" className="h-full w-full object-cover" />
+                </div>
+                <div className="h-6 w-6 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img src="https://i.pravatar.cc/100?img=2" alt="User" className="h-full w-full object-cover" />
+                </div>
+                <div className="h-6 w-6 rounded-full bg-gray-400 border-2 border-white overflow-hidden">
+                  <img src="https://i.pravatar.cc/100?img=3" alt="User" className="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span className="text-sm font-medium text-gray-800 ml-1">
+                Loved by 5M users with <span className="text-yellow-400">⭐</span> 4.9 rating
+              </span>
+            </div>
+
+            {/* Headlines */}
+            <div className="flex flex-col gap-2">
+              <h1 className="text-5xl font-bold tracking-tight text-[#1d1d1f] sm:text-6xl lg:text-6xl">
+                Introducing Look AI
+              </h1>
+              <h2 className="text-4xl font-normal  text-[#1d1d1f] sm:text-5xl lg:text-6xl">
+                Style yourself <br className="hidden lg:block" />
+                with just a picture
+              </h2>
+            </div>
+
+            {/* Description */}
+            <p className="text-lg text-gray-500  ">
+              Meet Look AI, the AI-powered app for effortless outfit styling. Snap a photo of your clothes and get instant personalized outfit recommendations and wardrobe insights.
+            </p>
+
+            {/* App Store Buttons */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start">
+              <a href="#" className="inline-block transition-opacity hover:opacity-80">
+                <img src="/googleplay.png" alt="Get it on Google Play" className="h-[44px] w-auto rounded-md" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column - Visuals */}
+          <div className="relative flex justify-center items-center w-full max-w-[600px] mx-auto lg:h-[600px]">
+            {/* Abstract Phones Placeholder */}
+            <div className="relative w-full h-[500px] bg-zinc-50 rounded-[40px] border-[8px] border-zinc-200 shadow-2xl flex flex-col items-center justify-center overflow-hidden">
+              <div className="absolute top-0 w-32 h-6 bg-zinc-200 rounded-b-xl"></div>
+              <p className="text-zinc-400 font-medium">App Interface Preview</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
