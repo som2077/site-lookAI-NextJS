@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import WarpText from "./WarpText";
 
 const footerLinks = {
   About: [
@@ -66,7 +67,7 @@ export default function Footer() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] hover:underline transition-colors"
+                        className="text-[13px] text-[#6e6e73] hover:text-black transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -80,10 +81,22 @@ export default function Footer() {
       </section>
 
       {/* Giant Bottom Text */}
-      <div className="w-full flex justify-center px-6 sm:px-8 translate-y-[40%]">
-        <h1 className="text-[11vw] leading-none font-black tracking-tighter lowercase text-center text-gray-800">
-          asthatice look
-        </h1>
+      <div className="w-full -mt-30 flex justify-center px-6 sm:px-8 translate-y-[47%]">
+        <WarpText
+          text="asthatice look"
+          color="#1d1d1f"
+          warpStrength={0.08}
+          warpScale={1.7}
+          speed={0.55}
+          pointerInfluence={0.42}
+          pointerStrength={0.38}
+          refraction={0.018}
+          ripple
+          fontSize="clamp(3rem, 10vw, 9rem)"
+          fontWeight={900}
+          style={{ height: '320px' }}
+          className="lowercase"
+        />
       </div>
     </footer>
   );

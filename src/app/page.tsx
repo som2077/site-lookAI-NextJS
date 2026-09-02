@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -81,7 +83,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1200px] grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
           {/* Left Column - Content */}
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 lg:pr-8">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-5 lg:pr-8">
 
             {/* Rating Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 shadow-sm">
@@ -127,11 +129,14 @@ export default function Home() {
 
           {/* Right Column - Visuals */}
           <div className="relative flex justify-center items-center w-full max-w-[600px] mx-auto lg:h-[600px]">
-            {/* Abstract Phones Placeholder */}
-            <div className="relative w-full h-[500px] bg-zinc-50 rounded-[40px] border-[8px] border-zinc-200 shadow-2xl flex flex-col items-center justify-center overflow-hidden">
-              <div className="absolute top-0 w-32 h-6 bg-zinc-200 rounded-b-xl"></div>
-              <p className="text-zinc-400 font-medium">App Interface Preview</p>
-            </div>
+            <Image
+              src="/homeIcon.png"
+              alt="App Interface Preview"
+              width={900}
+              height={900}
+              className="w-full h-auto object-contain"
+              priority
+            />
           </div>
 
         </div>
