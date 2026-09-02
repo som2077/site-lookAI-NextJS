@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Geist } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ConsoleArtInit from "@/components/ConsoleArtInit";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={cn("h-full", "antialiased", bricolage.className, bricolage.variable, "font-sans", geist.variable)}>
       <body className="min-h-full flex flex-col bg-background">
+        <ConsoleArtInit />
         <TooltipProvider>
           <Navbar />
           {children}
